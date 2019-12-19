@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Cytoscape Demo</title>
+    <meta charset="utf-8">
+    <style>
+        #viewer {
+            width: 100%;
+            height: 90%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #admin {
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background-color: #696969;
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer"></div>
+    <div id="admin">
+        <span>
+            <input type="file" id="uploadButton"/>
+        </span>
+        <span>
+            <h2 id="title">Diagramo</h2>
+        </span>
+    </div>
+
+    <script src="src/index.ts"></script>
+</body>
+</html>

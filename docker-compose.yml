@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  dev:
+    image: nicklehmann/diagramo-app:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+
+    working_dir: /app
+    volumes:
+      - .:/app
+
+    user: "501:20"
+
+    ports:
+      - 1234:1234     # Serves the development version
+      - 45000:45000   # Further connection by parcel, probably for live-reload
+
+    command: "parcel serve index.html --hmr-port 45000"

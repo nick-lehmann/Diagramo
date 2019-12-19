@@ -1,0 +1,15 @@
+{
+  "name": "Diagramo",
+  "version": "0.1.0",
+  "description": "UML viewer",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cytoscape": "^3.12.1",
+    "ui": "^0.2.4"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.8.6",
+    "typescript": "^3.7.3"
+  }
+}
